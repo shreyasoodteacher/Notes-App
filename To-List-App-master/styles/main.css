@@ -1,0 +1,48 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.notesLogo {
+    position: absolute;
+    top: 0;
+    font-family: PlayfairDisplay-Regular;
+    font-weight: 100;
+    font-size: 50px;
+    margin: 25px;
+    color: #252525;
+}
+
+.notesLandingPage {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.notesTitle {
+    font-family: Roboto-Regular;
+    font-size: 3vw;
+    font-weight: 100;
+    text-align: center;
+    max-width: 85%;
+    color: #0f0f0f;
+}
+
+.notesLink {
+    position: relative;
+    top: 100px;
+    font-family: PlayfairDisplay-Regular;
+    font-size: 1.8vw;
+    font-weight: 100;
+    text-decoration: none;
+    color: #202020;
+    transition: 250ms ease-in-out;
+}
+
+.notesLink:focus, .notesLink:hover {
+    color: #A47D00;
+}

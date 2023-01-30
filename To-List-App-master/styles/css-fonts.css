@@ -1,0 +1,22 @@
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+    font-family: Roboto-Bold;
+}
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+    font-family: Roboto-Medium;
+}
+
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+    font-family: Roboto-Light;
+}
+
+@font-face {
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+    font-family: PLayfairDisplay-Regular;
+}

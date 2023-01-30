@@ -1,0 +1,286 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Architects Daughter', cursive;
+}
+
+body {
+  background-color:rgb(250, 250, 235);
+}
+
+#msgLogOut{
+ width: 100%;
+ background-color: rgba(255, 0, 0, 0.568);
+ height: 25px;
+ position: absolute;
+ text-align: center;
+ color: white;
+ letter-spacing: 4px;
+ display: none;
+}
+
+
+#userData{
+  width: 100%;
+  max-width: 100%;
+  height: 80px;
+  background-color: rgb(250, 250, 235);
+  margin: auto;
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  box-shadow: -1px 7px 11px -1px rgb(211, 211, 211);
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+#userPhoto img{
+  width: 74px;
+  height: 100%;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  position: relative;
+}
+
+#btnSignOut{
+  background-color: rgb(252, 89, 89);
+}
+
+#btnSignOut:hover{
+  background-color: rgb(247, 0, 0);
+  transition: 0.2s;
+}
+
+#btnSignOut:active{
+  background-color: rgb(252, 103, 103)
+}
+
+
+
+
+#login{
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) ;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+}  
+#login img{
+cursor: pointer;
+}  
+  
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  /* display: flex; */
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 1;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 600px;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow: -5px 5px 12px #666666, 5px -5px 12px #ffffff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#headerMain {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px dotted #666666;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+h2{
+    font-size: 40px;
+    letter-spacing: 3px;  
+    border-bottom: 5px solid rgb(29, 202, 159);
+}
+h3{
+  font-size: 30px;
+  letter-spacing: 3px;  
+  border-bottom: 5px solid rgba(255, 0, 85, 0.295)
+}
+
+#headerMain input {
+  width: 60%;
+  padding: 8px;
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid #666666;
+}
+
+#buttonGroup{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #666666;
+  width: 150px;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#addTask{
+    background-color: rgb(73, 252, 73);
+}
+
+#removeAllTask{
+    background-color: rgb(252, 89, 89);
+}
+
+#addTask:hover{
+    background-color: rgb(3, 230, 3);
+    transition: 0.2s;
+}
+
+#addTask:active{
+    background-color: rgb(163, 255, 163);
+    
+}
+
+
+#removeAllTask:hover{
+    background-color: rgb(247, 0, 0);
+    transition: 0.2s;
+}
+
+#removeAllTask:active{
+    background-color: rgb(252, 103, 103)
+}
+
+#content{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    flex-direction: column;
+    padding-top: 10px; 
+}
+
+#message{
+  color: orange;
+  font-weight: bold;
+  padding: 5px;
+  display: none;
+}
+
+#tasks{
+list-style: none;
+width: 95%;
+overflow-y: auto;
+border-radius: 5px 0px 11px 11px;
+height: 100%;
+}
+#tasks::-webkit-scrollbar-thumb {
+    background-color: #666666;
+    border: 4px solid transparent;
+    border-radius:30px;
+    background-clip: padding-box;  
+  }
+  
+  #tasks::-webkit-scrollbar {
+    width: 18px;
+  }
+  
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+.task{
+    padding: 10px;
+    border-bottom: 1px solid #666666;
+    font-weight: bold;
+}
+
+input:checked + label{
+  text-decoration:line-through;
+  text-decoration-color: rgb(255, 0, 0);
+  text-decoration-style:wavy;
+  color: #8d8d8d;
+}
+
+
+
+@media screen and (max-width: 550px){
+  
+  h1 {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  h2{
+      font-size: 30px;
+      letter-spacing: 3px;  
+      border-bottom: 5px solid rgb(29, 202, 159);
+  }
+  h3{
+    display: none;
+  }
+
+  main {
+      top: 350px;
+    width: 95%;
+    height: 500px;
+  }
+
+  
+  #buttonGroup{
+    padding-top: 5px;
+   
+  }
+
+
+  .btn {
+    padding: 8px;
+    width: 120px;
+  }
+
+  #headerMain{
+   padding-bottom: 5px;
+  }
+
+
+  #tasks{
+    height: 80%;
+    }
+}
+.btn1{
+  width: 130px;
+  height: 40px;
+  background-color: rgb(59, 59, 212);
+  color: #e9f509;
+  border-radius: 10px;
+}
+
